@@ -1,8 +1,8 @@
 body {
-    transition: background-color 0.3s ease;
+    transition: background-color 0s ease;
 }
 
 .dark-mode {
-    background-color: #333;
+    background-color: #000;
     color: #fff;
 }
