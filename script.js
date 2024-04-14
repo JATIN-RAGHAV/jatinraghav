@@ -1,6 +1,6 @@
 function deleteTodo(Id) {
   fetch(
-    "https://b1b0b3f3-faa4-454b-a667-61ea23795eed-00-29d1h5nj763ss.riker.replit.dev/" +
+    "https://b1b0b3f3-faa4-454b-a667-61ea23795eed-00-29d1h5nj763ss.riker.replit.dev/todos/" +
       Id,
     {
       method: "DELETE",
@@ -25,7 +25,7 @@ function deleteWrapperFunction(Id) {
 
 function getTodos() {
   fetch(
-    "https://b1b0b3f3-faa4-454b-a667-61ea23795eed-00-29d1h5nj763ss.riker.replit.dev/",
+    "https://b1b0b3f3-faa4-454b-a667-61ea23795eed-00-29d1h5nj763ss.riker.replit.dev/todos",
     {
       method: "GET",
     }
@@ -85,7 +85,7 @@ sendbutton.addEventListener("click", function (event) {
 
   // Use JSON.stringify to convert body to a JSON string
   fetch(
-    "https://b1b0b3f3-faa4-454b-a667-61ea23795eed-00-29d1h5nj763ss.riker.replit.dev/",
+    "https://b1b0b3f3-faa4-454b-a667-61ea23795eed-00-29d1h5nj763ss.riker.replit.dev/todos",
     {
       method: "POST",
       headers: {
