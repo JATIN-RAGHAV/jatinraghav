@@ -7,7 +7,7 @@ function deleteTodo(Id) {
     }
   ).then((response) => {
     if (response.ok) {
-      let todo = document.getElementById(toString(Id));
+      let todo = document.getElementById(Id);
       if (todo) {
         todo.remove();
       }
@@ -57,7 +57,7 @@ function getTodos() {
         listItem.appendChild(grandChild1);
         listItem.appendChild(grandChild2);
         listItem.appendChild(grandChild3);
-        listItem.setAttribute("Id", toString(data[i]["Id"]));
+        listItem.setAttribute("Id", (data[i]["Id"]));
 
         list.appendChild(listItem);
       }
@@ -122,7 +122,7 @@ sendbutton.addEventListener("click", function (event) {
       listItem.appendChild(grandChild1);
       listItem.appendChild(grandChild2);
       listItem.appendChild(grandChild3);
-      listItem.setAttribute("Id", toString(data["Id"]));
+      listItem.setAttribute("Id", (data["Id"]));
       list.appendChild(listItem);
     })
     .catch((error) => {
